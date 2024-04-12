@@ -5,5 +5,5 @@ def solution(name, yearning, photo):
         for i in range(len(name)):
             score += pic.count(name[i]) * yearning[i]
         answer.append(score)
-        
+
     return answer
