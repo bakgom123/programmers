@@ -1,5 +1,5 @@
 def solution(a, b):
-    answer = ''
+    answer = ""
     weeks = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     days = {
         1: 31,
@@ -13,7 +13,7 @@ def solution(a, b):
         9: 30,
         10: 31,
         11: 30,
-        12: 31
+        12: 31,
     }
     now = 5
     for i in range(1, a):
@@ -21,3 +21,11 @@ def solution(a, b):
     now += b - 1
     answer = weeks[now % 7]
     return answer
+
+
+# import datetime
+
+
+# def getDayName(a, b):
+#     t = "MON TUE WED THU FRI SAT SUN".split()
+#     return t[datetime.datetime(2016, a, b).weekday()]
