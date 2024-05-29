@@ -7,6 +7,5 @@ function solution(t, p) {
       count++;
     }
   }
-
   return count;
 }
